@@ -17,6 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 #adding gem fot the project
 gem 'pundit'
+gem 'devise'
 
 
 group :development do

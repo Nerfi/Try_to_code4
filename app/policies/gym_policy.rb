@@ -11,6 +11,11 @@ class GymPolicy < ApplicationPolicy
 
   end
 
+  def create?
+    return new?
+
+  end
+
   def show?
     #everyone can see a restaurant
     return true
