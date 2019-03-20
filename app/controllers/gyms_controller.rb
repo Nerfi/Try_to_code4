@@ -2,7 +2,7 @@ class GymsController < ApplicationController
    before_action :set_gym, only: [:show, :edit, :update, :destroy]
 
    def index
-    @restaurants = policy_scope(Restaurant).order(created_at: :desc)
+     @gyms = policy_scope(Gym).order(created_at: :desc)
   end
 
   def show
@@ -19,7 +19,7 @@ class GymsController < ApplicationController
   def edit
     #esta linea la hemos sustituido por set_gym method
     #estar atento a esta line. puede que en un futuro sea molesta o no
-    @gym.edit(set_gym)
+#    @gym.edit(set_gym)
 
 
   end
