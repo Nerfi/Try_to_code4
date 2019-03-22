@@ -8,7 +8,7 @@ class GymsController < ApplicationController
       {
         lat: gym.latitude,
         lng: gym.longitude,
-        infoWindow: render_to_string(partial: "infowindow", locals: { gym: gym })
+        #infoWindow: render_to_string(partial: "infowindow", locals: { gym: gym })
 
        # infoWindow: { content: render_to_string(partial: "/gyms/map_box", locals: { flat: flat })
         # Uncomment the above line if you want each of your markers to display a info window when clicked
