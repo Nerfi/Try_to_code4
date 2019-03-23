@@ -1,10 +1,10 @@
 
 
-<div class="container">
-  <div class="row">
+<div class="main-container">
+
       <h1>Here you can have a look to the gyms around the world</h1>
     <% @gyms.each do |gym| %>
-    <div class="col-lg-3 col-xs-4 col-sm-4 col-xs-6 ">
+
       <div class="card"
         style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
          url('<%= cl_image_path gym.photo, height: 300, width: 400, crop: :fill %>')">
@@ -13,6 +13,11 @@
           <h2><%= gym.description %></h2>
           <p><%= gym.pricing  %></p>
         </div>
+
+
+
+
+
 
 
 
@@ -33,15 +38,29 @@
     </td>
 
 
-    </div>
+
 
      <% end %>
+
+     <div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @markers.to_json %>"
+
+
+></div>
+
   </div>
+
+
 
 </div>
 <!-- ADDING THE MAP FROM GOOGLE APIS -->
 
-<div
+
+
+  <div
   id="map"
   style="width: 100%;
   height: 600px;"
