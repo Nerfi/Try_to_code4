@@ -1,18 +1,25 @@
 // Specific CSS for your home-page
 
 
-.home-banner {
-  // background: linear-gradient( rgba(255,255,200,0), rgba(255,200,200,1)), url("try_to_code.jpg");
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
   background-image:url("try_to_code2.jpg");
   background-size: cover !important;
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover !important;
+}
 
-   h1 {
-    padding-top: 105px;
-    font-weight: bold
-  }
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
 
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
