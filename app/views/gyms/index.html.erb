@@ -19,10 +19,24 @@
           <p><%= gym.pricing  %></p>
          </div>
 
+         <% if policy(gym).create? %>
+         <%= link_to "New Gym", new_gym_path %>
+      <% end %>
+
+      <% if policy(gym).edit? %>
+        <%= link_to "Update", edit_gym_path(gym) %>
+     <% end %>
+     <td>
+       <% if policy(gym).destroy? %>
+       <%= link_to 'Destroy', gym, method: :delete, data: { confirm: 'Are you sure ?'} %>
+
+      <% end %>
 
         </div>
 
          <% end %>
+
+
 
   </div>
 

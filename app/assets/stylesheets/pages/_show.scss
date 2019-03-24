@@ -23,8 +23,15 @@
 
 .main-container{
   display:flex;
+  padding-right: 20px;
+
 }
 
 .cards{
   flex-grow: 1;
+}
+
+#map {
+  position: sticky;
+  top: 0;
 }
