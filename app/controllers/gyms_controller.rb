@@ -66,7 +66,7 @@ class GymsController < ApplicationController
 
   def destroy
     @gym.destroy
-    redirect_to gy
+    redirect_to gyms_path
 
 
   end
