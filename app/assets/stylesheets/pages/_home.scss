@@ -2,10 +2,11 @@
 
 
 .banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
   background-image:url("punch2.jpg");
+  background-position: center;
+  height: 100vh;
+
+  padding-top: 30vh;
   background-size: cover !important;
 }
 
