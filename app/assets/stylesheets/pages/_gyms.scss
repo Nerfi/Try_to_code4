@@ -5,16 +5,18 @@ h1{
 
 .cards{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns:  1fr 1fr ;
   grid-gap: 16px;
 
 }
 
-
+h2{
+  font-size: 24px;
+}
 
 @media(max-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
   }
 }
 
@@ -27,20 +29,13 @@ h1{
 
 .main-container{
   display:flex;
-  padding-right: 10px;
+
 
 
 }
 
 .cards{
   flex-grow: 1;
-}
-
-#map {
-  height: 100vh;
-  position: sticky;
-  top: 0;
-
 }
 
 

@@ -38,21 +38,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  padding: 71px;
+
+
+}
+
+.c {
+padding: 70px;
 
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -78,7 +83,7 @@
 }
 
 
-.card-category {
+.card-cate {
   background-size: cover;
   background-position: center;
   height: 180px;
