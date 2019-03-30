@@ -32,3 +32,22 @@
       </div>
     </div>
   </div>
+
+<!-- ADDING REVIEW-->
+
+<h2>
+  <%= pluralize @gym.reviews.size, "review" %>
+</h2>
+
+<div id="reviews">
+  <% if @gym.reviews.blank? %>
+    Be the first to leave a review for <%= @gym.name %>
+  <% else %>
+    <% @gym.reviews.each do |review| %>
+      <%= render 'reviews/show', review: review %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= render 'reviews/form', gym: @gym, review: @review %>
+

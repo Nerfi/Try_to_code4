@@ -24,6 +24,7 @@ class GymsController < ApplicationController
   end
 
   def show
+    @review = Review.new
 
 
   end
